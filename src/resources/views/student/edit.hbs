@@ -1,0 +1,20 @@
+<div class="container mt-4 mb-4">
+    <form method="POST" action="/{{data._id}}/update">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" value="{{data.name}}" name="name" aria-describedby="emailHelp" placeholder="Enter name">
+
+  </div>
+      <div class="form-group">
+    <label for="age">Age</label>
+    <input type="number" class="form-control"  value="{{data.age}}" name="age" aria-describedby="emailHelp" placeholder="Enter age">
+
+  </div>
+    <div class="form-group">
+    <label for="image">Image</label>
+    <input type="text" class="form-control"  value="{{data.address}}" name="image" aria-describedby="emailHelp" placeholder="Enter image">
+
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>

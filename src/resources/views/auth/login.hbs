@@ -1,0 +1,40 @@
+<div class="container mt-4 " style="width :500px">
+  <form method="POST" action="/auth/home">
+  <!-- Email input -->
+  <div class="form-outline mb-4">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" name="name" aria-describedby="emailHelp" placeholder="Enter name">
+
+  </div>
+
+  <!-- Password input -->
+  <div class="form-outline mb-4">
+    <label for="password">password</label>
+    <input type="password" class="form-control" name="password" aria-describedby="emailHelp" placeholder="Enter password">
+  </div>
+
+  <!-- Submit button -->
+  <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+
+  <!-- Register buttons -->
+  <div class="text-center">
+    <p>Not a member? <a href="/auth/register">Register</a></p>
+    <p>or sign up with:</p>
+    <button type="button" class="btn btn-link btn-floating mx-1">
+      <i class="fab fa-facebook-f"></i>
+    </button>
+
+    <button type="button" class="btn btn-link btn-floating mx-1">
+      <i class="fab fa-google"></i>
+    </button>
+
+    <button type="button" class="btn btn-link btn-floating mx-1">
+      <i class="fab fa-twitter"></i>
+    </button>
+
+    <button type="button" class="btn btn-link btn-floating mx-1">
+      <i class="fab fa-github"></i>
+    </button>
+  </div>
+</form>
+</div>

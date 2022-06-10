@@ -1,0 +1,41 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "beautiful": "prettier --single-quote --trailing-comma all --tab-width 2 --write src/**/*.{js,json,scss} ",
+    "start": "nodemon --inspect src/main.js",
+    "watch": "node-sass -w src/resources/scss/ -o src/public/css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haizchettiet/nodejs.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "subenbulen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haizchettiet/nodejs/issues"
+  },
+  "homepage": "https://github.com/haizchettiet/nodejs#readme",
+  "dependencies": {
+    "argon2": "^0.28.5",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.5",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.3.2",
+    "mongoose-slug-generator": "^1.0.4"
+  },
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.1",
+    "morgan": "^1.10.0",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16",
+    "prettier": "^2.6.2"
+  }
+}
